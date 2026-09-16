@@ -1,6 +1,0 @@
-TESTE DO PROJETO
-1. Abra index.html no navegador.
-2. Clique em Projetos e Participe.
-3. No cadastro, teste CPF, telefone e CEP.
-4. Teste o envio com campos obrigatórios vazios.
-5. Confira se todas as imagens aparecem.
