@@ -341,3 +341,94 @@ footer img { max-width: 100%; height: auto; }
   white-space: nowrap;
   border: 0;
 }
+
+
+/* ==============================================
+   FEEDBACK E MICROINTERAÇÕES
+   ============================================== */
+.badge {
+  display: inline-block;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background: var(--color-surface-soft);
+  color: var(--color-primary-dark);
+  border: 1px solid var(--color-border);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-left: 5px solid var(--color-primary-light);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-green);
+  margin-bottom: var(--space-5);
+}
+
+.alert strong { color: var(--color-primary-dark); }
+
+.modal {
+  width: min(560px, calc(100% - 2rem));
+  border: 0;
+  border-radius: var(--radius-lg);
+  padding: 0;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+  color: var(--color-text);
+}
+
+.modal::backdrop {
+  background: rgba(18, 58, 42, 0.65);
+}
+
+.modal-conteudo {
+  padding: var(--space-7);
+  background: var(--color-surface);
+}
+
+.modal-conteudo h2 { margin-top: 0; }
+
+.modal-fechamento {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  max-width: min(420px, calc(100% - 2rem));
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--color-primary-dark);
+  color: var(--color-surface);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.toast.sucesso {
+  border-left: 5px solid var(--color-accent);
+}
+
+button.secundario {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+button.secundario:hover {
+  background: var(--color-surface-green);
+  color: var(--color-primary-dark);
+}
+
+@media (max-width: 576px) {
+  .modal-conteudo { padding: var(--space-5); }
+  .modal-fechamento { flex-direction: column; }
+  .modal-fechamento button { width: 100%; }
+}

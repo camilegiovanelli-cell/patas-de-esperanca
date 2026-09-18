@@ -1,6 +1,9 @@
-TESTE DO PROJETO
-1. Abra index.html no navegador.
-2. Clique em Projetos e Participe.
-3. No cadastro, teste CPF, telefone e CEP.
-4. Teste o envio com campos obrigatórios vazios.
-5. Confira se todas as imagens aparecem.
+TESTE DO PROJETO — ETAPA 2
+
+1. Abra index.html, projetos.html e cadastro.html.
+2. Em projetos.html, verifique os badges, o alerta e o botão “Como posso ajudar?”.
+3. Abra o modal e teste Fechar e Ir para cadastro.
+4. Em cadastro.html, preencha os campos corretamente e clique em Enviar cadastro para visualizar o toast.
+5. Teste campos obrigatórios e as máscaras de CPF, telefone e CEP.
+6. Teste a navegação por teclado (Tab) e os estados de foco.
+7. Teste as páginas em desktop e celular.

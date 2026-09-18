@@ -24,29 +24,56 @@
 <section class="conteudo">
 <h1>Nossos projetos</h1>
 <p>Conheça as principais frentes de atuação da Patas de Esperança.</p>
+<div class="alert" role="alert">
+<div><strong>Informação:</strong> cada ação da ONG depende da participação da comunidade. Escolha uma forma de ajudar e faça parte da rede de proteção.</div>
+</div>
 </section>
 
 <section class="projeto">
 <div><img src="assets/projetos.png" alt="Gato recebendo cuidado durante uma ação da ONG"></div>
-<div><h2>Campanhas de doação</h2><p>As doações ajudam a custear castrações, medicamentos, alimentação e outros cuidados necessários aos gatos comunitários.</p></div>
+<div><span class="badge">Doação</span><h2>Campanhas de doação</h2><p>As doações ajudam a custear castrações, medicamentos, alimentação e outros cuidados necessários aos gatos comunitários.</p></div>
 </section>
 
 <section class="projeto">
 <div><img src="assets/icone-doacao.png" alt="Ícone representando uma doação"></div>
-<div><h2>Como realizar uma doação</h2><p>Você pode contribuir financeiramente e ajudar a ampliar o número de animais atendidos pelas campanhas da ONG.</p></div>
+<div><span class="badge">Apoio financeiro</span><h2>Como realizar uma doação</h2><p>Você pode contribuir financeiramente e ajudar a ampliar o número de animais atendidos pelas campanhas da ONG.</p></div>
 </section>
 
 <section class="projeto">
 <div><img src="assets/icone-lar.png" alt="Ícone de uma casa representando lar temporário"></div>
-<div><h2>Lar temporário</h2><p>Lares temporários oferecem segurança e cuidados aos animais enquanto aguardam atendimento ou uma família responsável.</p></div>
+<div><span class="badge">Acolhimento</span><h2>Lar temporário</h2><p>Lares temporários oferecem segurança e cuidados aos animais enquanto aguardam atendimento ou uma família responsável.</p></div>
 </section>
 
 <section class="engajamento">
 <h2>Chamada para engajamento</h2>
 <p>Você também pode fazer parte dessa rede de proteção como voluntário.</p>
 <a class="botao" href="cadastro.html">Quero participar</a>
+<button type="button" class="secundario" id="abrirModal">Como posso ajudar?</button>
 </section>
 </main>
+
+<dialog class="modal" id="modalAjuda" aria-labelledby="tituloModal">
+<div class="modal-conteudo">
+<h2 id="tituloModal">Como você pode ajudar</h2>
+<p>Você pode contribuir com trabalho voluntário, doações financeiras ou oferecendo um lar temporário.</p>
+<p>Na página <strong>Participe</strong>, preencha seus dados e indique a forma de contribuição que mais combina com você.</p>
+<div class="modal-fechamento">
+<button type="button" class="secundario" id="fecharModal">Fechar</button>
+<a class="botao" href="cadastro.html">Ir para cadastro</a>
+</div>
+</div>
+</dialog>
+
+<script>
+const modal = document.querySelector('#modalAjuda');
+const abrirModal = document.querySelector('#abrirModal');
+const fecharModal = document.querySelector('#fecharModal');
+abrirModal.addEventListener('click', () => modal.showModal());
+fecharModal.addEventListener('click', () => modal.close());
+modal.addEventListener('click', (event) => {
+  if (event.target === modal) modal.close();
+});
+</script>
 
 <footer>
 <p>Patas de Esperança - Castrar é cuidar.</p>

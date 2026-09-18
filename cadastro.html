@@ -95,6 +95,7 @@ placeholder="Conte como gostaria de ajudar."></textarea>
 
 <button type="submit">Enviar cadastro</button>
 </form>
+<div class="toast sucesso" id="toastSucesso" role="status" aria-live="polite" hidden>Cadastro preparado com sucesso! Esta demonstração não envia dados para um servidor.</div>
 </main>
 
 <footer>
@@ -121,6 +122,18 @@ function mascaraTelefone(v){
 document.querySelector('#cpf').addEventListener('input',e=>e.target.value=mascaraCPF(e.target.value));
 document.querySelector('#cep').addEventListener('input',e=>e.target.value=mascaraCEP(e.target.value));
 document.querySelector('#telefone').addEventListener('input',e=>e.target.value=mascaraTelefone(e.target.value));
+
+const formulario = document.querySelector('form');
+const toast = document.querySelector('#toastSucesso');
+formulario.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (!formulario.checkValidity()) {
+    formulario.reportValidity();
+    return;
+  }
+  toast.hidden = false;
+  window.setTimeout(() => { toast.hidden = true; }, 4500);
+});
 </script>
 </body>
 </html>
