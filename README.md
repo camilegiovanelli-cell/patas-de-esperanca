@@ -15,3 +15,4 @@ O formulário usa validações nativas HTML5 e JavaScript para as máscaras de C
 
 ## Etapa 2 — Feedback e microinterações
 O projeto inclui badges, caixa de alerta, modal com `<dialog>` e toast de confirmação no formulário, mantendo a identidade visual e os recursos de acessibilidade.
+Projeto desenvolvido para a 4ª prática, com foco em acessibilidade, controle de versões e fluxo GitFlow.
