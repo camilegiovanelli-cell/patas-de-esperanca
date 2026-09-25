@@ -1,0 +1,10 @@
+TESTE DA TERCEIRA PRÁTICA
+
+1. Abra o endereço principal do projeto.
+2. Navegue por Início, Projetos e Participe sem recarregar a aplicação.
+3. Use o botão do menu hambúrguer em uma tela estreita.
+4. Em Projetos, abra e feche o modal.
+5. Em Início, clique em "Apoiar a causa" e confirme o contador.
+6. Em Participe, teste CPF, telefone e CEP.
+7. Preencha o formulário e verifique o toast e o registro local.
+8. Recarregue a página de cadastro e confirme que o localStorage foi recuperado.

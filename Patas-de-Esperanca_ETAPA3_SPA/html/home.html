@@ -1,0 +1,58 @@
+<section class="hero" aria-labelledby="tituloHome">
+  <h1 id="tituloHome" class="sr-only">Patas de Esperança — Pequenas ações, grandes mudanças</h1>
+  <img src="imagens/banner-principal.png" alt="Gato comunitário em destaque e mensagem da campanha Patas de Esperança">
+</section>
+
+<section class="conteudo">
+  <h2>Sobre a Patas de Esperança</h2>
+  <div class="duas-colunas">
+    <img src="imagens/sobre.png" alt="Gato comunitário recebendo cuidado e proteção">
+    <div>
+      <p>A Patas de Esperança é uma ONG fictícia dedicada à proteção de gatos de rua e comunitários.</p>
+      <p>Nosso trabalho busca ampliar o acesso à castração responsável, apoiar cuidadores e incentivar a comunidade a participar da proteção animal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="conteudo" aria-labelledby="tituloAjuda">
+  <h2 id="tituloAjuda">Como podemos ajudar</h2>
+  <div class="cards">
+    <article>
+      <img src="imagens/icone-castracao.png" alt="">
+      <h3>Castração</h3>
+      <p>Campanhas para reduzir o abandono e promover o bem-estar animal.</p>
+    </article>
+    <article>
+      <img src="imagens/icone-lar.png" alt="">
+      <h3>Lar temporário</h3>
+      <p>Apoio aos animais que precisam de acolhimento durante o atendimento.</p>
+    </article>
+    <article>
+      <img src="imagens/icone-doacao.png" alt="">
+      <h3>Doação</h3>
+      <p>Contribuições ajudam a manter as ações e os cuidados.</p>
+    </article>
+  </div>
+</section>
+
+<section class="conteudo" x-data="apoioApp()" aria-labelledby="tituloApoio">
+  <div class="apoio-box">
+    <div>
+      <span class="badge">Interação</span>
+      <h2 id="tituloApoio">Apoie a causa</h2>
+      <p>Esse contador demonstra uma interação simples com um framework JavaScript e registra seu apoio neste navegador.</p>
+    </div>
+    <div class="contador" aria-live="polite">
+      <strong x-text="apoios"></strong>
+      <span>apoios da comunidade</span>
+      <button type="button" class="botao" @click="registrarApoio">Apoiar a causa</button>
+    </div>
+  </div>
+</section>
+
+<section class="contato">
+  <h2>Entre em contato</h2>
+  <p><strong>E-mail:</strong> contato@patasdeesperanca.org.br</p>
+  <p><strong>Telefone:</strong> (11) 99999-9999</p>
+  <p><strong>Localização:</strong> São Paulo - SP</p>
+</section>

@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/projetos", "destination": "/index.html" },
+    { "source": "/cadastro", "destination": "/index.html" }
+  ]
+}
